@@ -1,0 +1,34 @@
+﻿<Window x:Class="Hemuppgift_WPF.GridWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hemuppgift_WPF"
+        mc:Ignorable="d"
+        Title="GridWindow" Height="450" Width="800">
+    
+    <StackPanel RenderTransformOrigin="0.499,0.513">
+        <StackPanel Orientation="Horizontal" Margin="10">
+            <TextBlock Text="Row:" VerticalAlignment="Center" Margin="5"/>
+            <TextBox Name="RowTextBox" Width="50" Margin="5"/>
+            <TextBlock Text="Column:" VerticalAlignment="Center" Margin="5"/>
+            <TextBox Name="ColumnTextBox" Width="50" Margin="5"/>
+            <Button Content="Apply" Click="Button_Click"  Margin="5"/>
+        </StackPanel>
+        <Grid Name="GridPanel">
+            <Grid.RowDefinitions>
+                <RowDefinition  />
+                <RowDefinition  />
+                <RowDefinition  />
+                <RowDefinition  />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition  />
+                <ColumnDefinition  />
+                <ColumnDefinition  />
+                <ColumnDefinition  />
+            </Grid.ColumnDefinitions>
+
+        </Grid>
+    </StackPanel>
+</Window>
