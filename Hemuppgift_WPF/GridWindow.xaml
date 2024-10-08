@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="GridWindow" Height="450" Width="800">
     
-    <StackPanel>
+    <Grid>
         <StackPanel Orientation="Horizontal" Margin="10">
             <TextBlock Text="Row:" VerticalAlignment="Center" Margin="5"/>
             <TextBox Name="RowTextBox" Width="50" Margin="5"/>
@@ -30,5 +30,5 @@
             </Grid.ColumnDefinitions>
 
         </Grid>
-    </StackPanel>
+    </Grid>
 </Window>
