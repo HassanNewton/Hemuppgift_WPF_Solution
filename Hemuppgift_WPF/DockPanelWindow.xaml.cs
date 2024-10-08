@@ -36,7 +36,7 @@ namespace Hemuppgift_WPF
             Grid.SetRow(image, Grid.GetRow(CenterButton));
             Grid.SetColumn(image, Grid.GetColumn(CenterButton));
 
-            // Hämta DockPanel
+            // Hämta DockPanel Inget måste men här hanterar vi om det skulle vara null
             var dockPanel = this.Content as DockPanel;
 
             if (dockPanel != null)
